@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="LogUI" src="project://database/Assets/LogUI.uxml?fileID=9197481963319205126&amp;guid=f9e7fbf7b6f6d94d39a14de5938d1994&amp;type=3#LogUI" />
+    <ui:VisualElement name="NetworkUIContainer" style="flex-grow: 0; flex-direction: row; justify-content: flex-end; flex-shrink: 0;">
+        <ui:VisualElement style="flex-grow: 0; margin-top: 1.5%; margin-right: 1.5%; margin-bottom: 1.5%; margin-left: 1.5%;">
+            <ui:Button text="Server" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ServerBtn" focusable="false" />
+            <ui:Button text="Host" parse-escape-sequences="true" display-tooltip-when-elided="true" name="HostBtn" enable-rich-text="true" focusable="false" />
+            <ui:Button text="Client" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ClientBtn" focusable="false" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="LogUIContainer" style="flex-grow: 1; flex-direction: column-reverse;">
+        <ui:Instance template="LogUI" name="LogUI" style="flex-direction: column; flex-grow: 1; max-height: 50%;" />
+        <ui:VisualElement style="flex-grow: 0; align-items: flex-start;">
+            <ui:Button text="Toggle Logs" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ToggleLogBtn" focusable="false" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
